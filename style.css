@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #E2E2E2;
+    display: flex;
+}
+
+.container{
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.image-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 130%;
+}
+
+.image-area img{
+    height: 500px;
+    object-fit: cover;
+}
+
+.image-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.text-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+.other-blue-header{
+    display: inline-block;
+    padding: 0 0.3rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #2175F5;
+    border-radius: 0.5rem;
+}
+
+.apple-text{
+    font-size: 1.5rem;
+}
+
+.second-header-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.text-product-storage{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.text-product-gb{
+    display: flex;
+    gap: 2rem; 
+}
+
+.gb512,
+.tb1,
+.tb2{
+    padding: 0.5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tb1{
+    background-color: #2175F5;
+    color: white;
+}
+
+.add-to-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.add-to-card button{
+    color: white;
+    border: none;
+    background-color: #2175F5;
+    padding: 1rem;
+}
+
+.add-to-card button i{
+    margin-right: .4rem;
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right: 4rem;
+}
+
+@media screen and (max-width:1500px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #E2E2E2;
+        display: flex;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .image-area img{
+        max-width: 100%;
+        height: auto;
+        overflow: hidden; 
+    }
+}
+
+@media screen and (max-width:960px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: auto;
+    }
+    .image-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .add-to-card{
+        width: 100%;
+    }
+
+    .price{
+        margin-right: 0;
+    }
+
+    .image-area{
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
